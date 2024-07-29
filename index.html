@@ -31,9 +31,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- reCaptcha -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
 </head>
 
@@ -570,7 +567,7 @@
             </form>
           </div> -->
           <div class="col-lg-8">
-            <form action="https://formspree.io/f/xovavbbr/{form_id}" class="php-email-form" method="POST">
+            <form action="https://formspree.io/f/xovavbbr" method="POST" class="php-email-form">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -596,7 +593,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" value="submit">Send Message</button>
                 </div>
 
               </div>
@@ -665,8 +662,12 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- reCaptcha -->
+  <!-- reCaptcha v2 -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- reCaptcha v3 -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render={6LcXjhoqAAAAAE9cfz8HnJVKxn42-ryyWhKs6mPz}"></script> -->
 
 
 </body>
