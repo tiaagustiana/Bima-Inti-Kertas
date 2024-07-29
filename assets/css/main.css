@@ -553,7 +553,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -642,35 +642,8 @@ section,
   color: var(--accent-color);
   line-height: 0;
 }
-#about .section-title p {
-    margin-bottom: 0;
-    text-align: justify;
-}
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-.about-2 .content h2 {
-  font-weight: 700;
-  font-size: 24px;
-}
-/* .about-2 .content i {
-  font-size: 84px;
-  color: #fff200;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-} */
-
-.about-2 .content .icon {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.about-2 .content .icon i {
+.about .content .icon i {
   font-size: 62px;
   font-weight: bold;
   color: #fff200;
@@ -679,66 +652,24 @@ section,
   -webkit-text-stroke-color: var(--accent-color);
 }
 
-.about-2 .content .icon svg {
+.about .content .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.about-2 .content .icon svg path {
+.about .content .icon svg path {
   transition: 0.5s;
   fill: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
-.about-2 .content p span {
+.about .content p span {
   color: var(--accent-color);
 }
 
-.about-2 .content .small-img{
-  display: none;
- }
-
-.about-2 .big-img{
-  display: block;
- }
-
-.about-2 .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-2 .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about-2 .content ul strong {
-  margin-right: 10px;
-}
-
-.about-2 .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--accent-color);
-  line-height: 0;
-}
-#about-2 .section-title p {
+#about .section-title p {
     margin-bottom: 0;
     text-align: justify;
-}
-
-@media (max-width: 575px) {
-  .about-2 .content i {
-    font-size: 62px;
-  }
-  .about-2 .content .small-img{
-    display: block;
-    margin: 40px 0px 20px 0px;
-  }
-  .about-2 .big-img{
-    display: none;
-  }
 }
 
 /*--------------------------------------------------------------

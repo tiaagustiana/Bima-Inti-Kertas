@@ -31,6 +31,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- reCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
 </head>
 
@@ -43,7 +46,7 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house-fill navicon"></i><span>Beranda</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>Tentang</span></a></li>
+        <li><a href="#about"><i class="bi bi-person-fill navicon"></i><span>Tentang</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Produk</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Layanan</span></a></li>
         <li><a href="#contact"><i class="bi bi-telephone-fill navicon"></i><span>Kontak</span></a></li>
@@ -57,7 +60,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/bik-images/mesin-paper-core.jpg" alt="">
+      <img src="assets/img/bik-images/background-bik.webp" alt="">
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
@@ -96,13 +99,6 @@
           </div>
           <div class="col-lg-8 content">
             <!-- <h2>Designing</h2> -->
-              <p class="py-3">
-                <span class="fw-bold" style="color: #aa7d51;">Bima Inti Kertas</span> merupakan perusahaan yang bergerak dibidang bagian packaging yang menyediakan berbagai kemasan Industri 
-                seperti kemasan Paper Core, Paper Tube, Siku Kertas, Karton Box, Papan rangka gulungan kain, Plastic Wrapping, 
-                Plastic HDPE/LDPE, Composite Can, Paper Lunch Box. Perusahaan Kami sudah berpengalaman dibidang kemasan kertas yang berkualitas 
-                untuk kemasan Industri, kemasan kertas ini salah satu sebagai kebutuhan-kebutuhan Industri, karena produk-produk unggulan Kami ini 
-                sangat sesuai untuk kebutuhan Industri anda sebagai alat media dalam pengemasan produk-produk unggulan anda.
-              </p>
               <p>
                 <span class="fw-bold" style="color: #aa7d51;">Bima Inti Kertas</span> Kami memproduksi berbagai Paper Core Industri, dengan pilihan papan serat standar dan berkinerja tinggi untuk ketahanan 
                 maksimal terhadap benturan, ideal untuk Pabrik Kertas, Film, Tekstil, Foil, Konstruksi, Pengiriman dan Pengiriman Surat, yang sangat penting di berbagai industri.
@@ -112,20 +108,9 @@
                 baik dari segi pelayanan maupun kualitas produk dan dapat menciptakan kepuasan terhadap konsumen.
               </p>
           </div>
-        </div>
-    
-      </div>
 
-    </section>
-    <!-- /About Section -->
-
-    <section id="about-2" class="about-2 section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
           <div class="col-lg-8 content">
-            
+        
             <div class="icon">
               <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                 <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
@@ -135,9 +120,6 @@
             <h2>
               <span>100%</span> Kertas Daur Ulang
             </h2>
-            <div class="small-img col-lg-4">
-              <img src="assets/img/bik-images/daur-ulang.jpg" class="img-fluid" alt="">
-            </div>
               <p class="py-3">
                 <span class="fw-bold">Keberlanjutan Lingkungan:</span> Terbuat sepenuhnya dari bahan daur ulang, 
                 terutama limbah pasca-konsumen, Tube ini merupakan pilihan kemasan yang sangat ramah lingkungan.
@@ -152,14 +134,15 @@
                 biaya dibandingkan dengan alternatif yang terbuat dari logam, plastik, kaca, atau kayu.
               </p>
           </div>
-          <div class="big-img col-lg-4">
-            <img src="assets/img/bik-images/daur-ulang.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4">
+            <img src="assets/img/bik-images/daur-ulang.jpg" class="img-fluid" alt="image-daur-ulang">
           </div>
         </div>
     
       </div>
 
     </section>
+    <!-- /About Section -->
 
     <section id="machine-product" class="machine-product section">
 
@@ -235,34 +218,34 @@
             <li data-filter="*" class="filter-active">Semua Produk</li>
           </ul><!-- End Portfolio Filters -->
 
+<!-- 1 -->
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <!-- 1 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/paper-tube.jpg" class="img-fluid" alt="">
+              <img src="assets/img/bik-images/paper-core.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Paper Core</h4>
                 <p>Paper</p>
-                <a href="assets/img/bik-images/paper-tube.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/bik-images/paper-core.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 
               </div>
             </div>
             <!-- End Portfolio Item -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/papan-rangka-textile.jpg" class="img-fluid" alt="">
+              <img src="assets/img/bik-images/paper-spool-bobbin.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Papan Rangka Textile</h4>
+                <h4>Papan Spools/Bobbins</h4>
                 <p>Paper</p>
-                <a href="assets/img/bik-images/papan-rangka-textile.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/bik-images/paper-spool-bobbin.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 
               </div>
             </div>
             <!-- End Portfolio Item -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/paper-1.webp" class="img-fluid" alt="">
+              <img src="assets/img/core berbagai ukuran3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Paper Tube</h4>
                 <p>Paper</p>
-                <a href="assets/img/bik-images/paper-1.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/core berbagai ukuran3.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
 
               </div>
             </div>
@@ -280,18 +263,45 @@
 
           </div>
           <!-- End Portfolio Container -->
-
+<!-- 2 -->
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-            <img src="assets/img/bik-images/paper-can.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Paper Can</h4>
-              <p>Paper</p>
-              <a href="assets/img/bik-images/paper-can.png" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+              <img src="assets/img/bik-images/paper-canister.webp" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Paper Canister</h4>
+                <p>Paper</p>
+                <a href="assets/img/bik-images/paper-canister.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
             </div>
+            <!-- End Portfolio Item -->
+            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+              <img src="assets/img/bik-images/paper-tube-3.webp" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Paper Tube</h4>
+                <p>Paper</p>
+                <a href="assets/img/bik-images/paper-tube-3.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+              <img src="assets/img/bik-images/toilet-paper-tube.webp" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Paper Tube</h4>
+                <p>Paper</p>
+                <a href="assets/img/bik-images/toilet-paper-tube.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+              <img src="assets/img/bik-images/paper-drum.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Paper Drum</h4>
+                <p>Paper</p>
+                <a href="assets/img/bik-images/paper-drum.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
           </div>
-          <!-- End Portfolio Item -->
-        </div>
 
         </div>
 
@@ -491,12 +501,16 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <h6 class="fw-bold">HQ:</h6>
+                <h6 class="fw-bold">Head Office:</h6>
                 <p><span class="fw-bold">Satrio Tower,</span> 9th Floor A, 
                   Jl. Prof. Dr. Satrio Blok C4 Kuningan Setiabudi, Jakarta Selatan 12950
                 </p>
-                <h6 class="fw-bold">WS:</h6>
-				        <p><span class="fw-bold">Industrial Area,</span> Cileungsi, Jawa Barat</p>
+                <h6 class="fw-bold">Warehouse:</h6>
+				        <p>
+                  <span class="fw-bold">Industrial Area,</span> 
+                  Jl. Raya Narogong Km.26 No. 767 RT.003/RT.002, 
+                  Kel. Dayeuh, Kec. Cileungsi, Kab. Bogor, Jawa Barat 16820
+                </p>
               </div>
             </div>
             <!-- End Info Item -->
@@ -505,7 +519,6 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <!-- <p>+62 0000 0000</p> -->
                 <p>(021) 2598 4818</p>
               </div>
             </div>
@@ -515,7 +528,10 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>sales@bimapaper.co.id</p>
+                <p>- info@bimapaper.co.id
+                  <br>
+                  - sales@bimapaper.co.id
+                </p>
               </div>
             </div>
             <!-- End Info Item -->
@@ -646,6 +662,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- reCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </body>
 
