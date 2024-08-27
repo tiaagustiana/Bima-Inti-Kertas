@@ -10,13 +10,25 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Candara';
+  src: url('/assets/fonts/Candara.ttf'),
+  url('/assets/fonts/Candara_Bold.ttf'),
+  url('/assets/fonts/Candara_Bold_Italic.ttf'),
+  url('/assets/fonts/Candara_Italic.ttf'),
+  ;
+  font-weight: normal;
+  font-style: normal;
+}
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* --default-font: 'Poppins', sans-serif; */
-  --heading-font: "Raleway",  sans-serif;
+  /* --heading-font: "Raleway",  sans-serif; */
+  --heading-font: "Candara",  sans-serif;
   /* --heading-font: 'Poppins', sans-serif; */
-  --nav-font: "Poppins",  sans-serif;
+  /* --nav-font: "Poppins",  sans-serif; */
+  --nav-font: "Candara",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -564,10 +576,26 @@ section,
   z-index: 3;
 }
 
+.col-lg-9 {
+  flex: 0 0 auto;
+  width: 75%;
+  }
+
+.hero .container .img-home {
+  position: absolute;
+  top: 25% !important;
+  left: 15%;
+  width: 600px;
+  height: 300px;
+  z-index: 4;
+  transform: translateY(-55%);
+}
+
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 84px;
   font-weight: 700;
+  font-family: 'Candara', sans-serif;
 }
 
 .hero p {
@@ -610,6 +638,16 @@ section,
   .hero p {
     font-size: 32px;
     text-align: center;
+  }
+
+  .hero .container .img-home {
+    position: absolute;
+    top: 25% !important;
+    left: 15%;
+    width: 300px;
+    height: 150px;
+    z-index: 4;
+    transform: translateY(-50%);
   }
 }
 
