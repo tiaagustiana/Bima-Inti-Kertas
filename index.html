@@ -1,616 +1,743 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bima Inti Kertas</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Bima Inti Kertas</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link
+      href="assets/img/bik-images/Logo BIK - Final - Png (only logo).png"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/bik-images/Logo BIK - Final - Png (only logo).png" rel="icon" type="image/x-icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+    <!-- Icon Font awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- SweetAlert -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
 
-  <!-- SweetAlert -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  
-</head>
+  <body class="index-page">
+    <header id="header" class="header d-flex flex-column justify-content-center">
+      <!-- Icon Toggle Bars -->
+      <i class="header-toggle d-xl-none fa fa-bars" aria-hidden="true"></i>
 
-<body class="index-page">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <i class="fa fa-user-o" aria-hidden="true"></i>
+              <span>Tentang</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+              <span>Produk</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <i class="fa fa-tasks" aria-hidden="true"></i>
+              <span>Layanan</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Kontak</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section light-background">
+        <img src="assets/img/bik-images/background-bik.webp" alt="" />
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house-fill navicon"></i><span>Beranda</span></a></li>
-        <li><a href="#about"><i class="bi bi-person-fill navicon"></i><span>Tentang</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Produk</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Layanan</span></a></li>
-        <li><a href="#contact"><i class="bi bi-telephone-fill navicon"></i><span>Kontak</span></a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/bik-images/background-bik.webp" alt="">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
+        <div class="container" data-aos="zoom-out">
+          <div class="row justify-content-center">
             <div class="col-lg-9">
-              <img src="assets/img/bik-images/Logo BIK - Final - Png.png" alt="" class="img-home">
+              <img src="assets/img/bik-images/Logo BIK - Final - Png.png" alt="logo-bik" class="img-home" />
               <!-- <h2>BIMA INTI KERTAS</h2> -->
             </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <!-- /Hero Section -->
 
-    </section><!-- /Hero Section -->
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Tentang Bima Inti Kertas</h2>
+        </div>
+        <!-- End Section Title -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Tentang Bima Inti Kertas</h2>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/bik-images/paper core production-2.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <!-- <h2>Designing</h2> -->
-              <p>
-                <span class="fw-bold" style="color: #aa7d51;">Bima Inti Kertas</span> Kami memproduksi berbagai Paper Core Industri, dengan pilihan papan serat standar dan berkinerja tinggi untuk ketahanan 
-                maksimal terhadap benturan, ideal untuk Pabrik Kertas, Film, Tekstil, Foil, Konstruksi, Pengiriman dan Pengiriman Surat, yang sangat penting di berbagai industri.
-                Paper Tube besar juga digunakan sebagai pusat pemotongan ulang, inti reprografi, inti pita dan label, dan inti serbaguna. Tube industri kami juga dapat disesuaikan dengan spesifikasi Anda, lihat 
-                pilihan Paper Tube khusus Kami. Perusahaan Kami berkomitmen dan mendukung penuh berkerja sama dengan baik 
-                guna meningkatkan perkembangan usaha anda dari produk-produk unggulan Kami, selaku sebagai Produsen kemasan berkualitas kami tetap memberikan yang terbaik terhadap konsumen, 
-                baik dari segi pelayanan maupun kualitas produk dan dapat menciptakan kepuasan terhadap konsumen.
-              </p>
-          </div>
-
-          <div class="col-lg-8 content">
-        
-            <div class="icon">
-              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-              </svg>
-              <i class="bi bi-recycle"></i>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img src="assets/img/bik-images/paper core production-2.jpg" alt="core-production" class="img-fluid" />
             </div>
-            <h2>
-              <span>100%</span> Kertas Daur Ulang
-            </h2>
+            <div class="col-lg-8 content">
+              <!-- <h2>Designing</h2> -->
+              <p>
+                <span class="fw-bold" style="color: #aa7d51"
+                  >Bima Inti Kertas</span
+                >
+                Kami memproduksi berbagai Paper Core Industri, dengan pilihan
+                papan serat standar dan berkinerja tinggi untuk ketahanan
+                maksimal terhadap benturan, ideal untuk Pabrik Kertas, Film,
+                Tekstil, Foil, Konstruksi, Pengiriman dan Pengiriman Surat, yang
+                sangat penting di berbagai industri. Paper Tube besar juga
+                digunakan sebagai pusat pemotongan ulang, inti reprografi, inti
+                pita dan label, dan inti serbaguna. Tube industri kami juga
+                dapat disesuaikan dengan spesifikasi Anda, lihat pilihan Paper
+                Tube khusus Kami. Perusahaan Kami berkomitmen dan mendukung
+                penuh berkerja sama dengan baik guna meningkatkan perkembangan
+                usaha anda dari produk-produk unggulan Kami, selaku sebagai
+                Produsen kemasan berkualitas kami tetap memberikan yang terbaik
+                terhadap konsumen, baik dari segi pelayanan maupun kualitas
+                produk dan dapat menciptakan kepuasan terhadap konsumen.
+              </p>
+            </div>
+
+            <div class="col-lg-8 content">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="none"
+                    stroke-width="0"
+                    fill="#f5f5f5"
+                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                  </path>
+                </svg>
+                <i class="fa fa-recycle" aria-hidden="true"></i>
+              </div>
+              <h2>
+                <span>100%</span>
+                 Kertas Daur Ulang
+              </h2>
               <p class="py-3">
-                <span class="fw-bold">Keberlanjutan Lingkungan:</span> Terbuat sepenuhnya dari bahan daur ulang, 
-                terutama limbah pasca-konsumen, Tube ini merupakan pilihan kemasan yang sangat ramah lingkungan.
-                <br/>
-                <span class="fw-bold">Kostumisasi:</span> Kami menawarkan berbagai ukuran, kekuatan tekan, dan 
-                hasil akhir permukaan untuk memenuhi kebutuhan spesifik industri.
-                <br/>
-                <span class="fw-bold">Kualitas dan Ketahanan:</span> Meskipun terbuat dari bahan daur ulang, 
-                Tube-tube ini tetap mempertahankan standar kualitas tinggi dan dapat digunakan berkali-kali.
-                <br/>
-                <span class="fw-bold">Efisiensi Biaya:</span> Paper Tube daur ulang seringkali lebih hemat 
-                biaya dibandingkan dengan alternatif yang terbuat dari logam, plastik, kaca, atau kayu.
+                <span class="fw-bold">Keberlanjutan Lingkungan:</span> Terbuat
+                sepenuhnya dari bahan daur ulang, terutama limbah
+                pasca-konsumen, Tube ini merupakan pilihan kemasan yang sangat
+                ramah lingkungan.
+                <br />
+                <span class="fw-bold">Kostumisasi:</span> Kami menawarkan
+                berbagai ukuran, kekuatan tekan, dan hasil akhir permukaan untuk
+                memenuhi kebutuhan spesifik industri.
+                <br />
+                <span class="fw-bold">Kualitas dan Ketahanan:</span> Meskipun
+                terbuat dari bahan daur ulang, Tube-tube ini tetap
+                mempertahankan standar kualitas tinggi dan dapat digunakan
+                berkali-kali.
+                <br />
+                <span class="fw-bold">Efisiensi Biaya:</span> Paper Tube daur
+                ulang seringkali lebih hemat biaya dibandingkan dengan
+                alternatif yang terbuat dari logam, plastik, kaca, atau kayu.
               </p>
-          </div>
-          <div class="col-lg-4">
-            <img src="assets/img/bik-images/daur-ulang.jpg" class="img-fluid" alt="image-daur-ulang">
+            </div>
+            <div class="col-lg-4">
+              <img src="assets/img/bik-images/daur-ulang.jpg" alt="image-daur-ulang" class="img-fluid" />
+            </div>
           </div>
         </div>
-    
-      </div>
+      </section>
+      <!-- /About Section -->
 
-    </section>
-    <!-- /About Section -->
+      <section id="machine-product" class="machine-product section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Mesin Produksi</h2>
+        </div>
 
-    <section id="machine-product" class="machine-product section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Mesin Produksi</h2>
-      </div>
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 machine-product-images d-lg-block d-md-none" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/bik-images/mesin-produk-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row gy-4">
-                  <div class="col-lg-12">
-                    <img src="assets/img/bik-images/mesin-produk-3.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-12">
-                    <img src="assets/img/bik-images/mesin-produk-4.jpg" class="img-fluid" alt="">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6 machine-product-images d-lg-block d-md-none" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-lg-6">
+                  <img src="assets/img/bik-images/mesin-produk-2.jpg" alt="mesin-produk-2" class="img-fluid" />
+                </div>
+                <div class="col-lg-6">
+                  <div class="row gy-4">
+                    <div class="col-lg-12">
+                      <img src="assets/img/bik-images/mesin-produk-3.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="col-lg-12">
+                      <img src="assets/img/bik-images/mesin-produk-4.jpg" alt="mesin-produk-4" class="img-fluid" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Kustom Paper Core untuk kebutuhan Anda</h3>
-            <p>
-              <span class="fw-bold" style="color: #aa7d51;">Bima Inti Kertas </span>memproduksi Paper Core dari 
-              kertas karton daur ulang, yang dirancang khusus untuk mendukung 
-              berbagai produk yang digulung, memastikannya tetap tergulung dengan 
-              kencang dan dapat dikeluarkan dengan lancar. Berikut ini beberapa 
-              alasan mengapa pelanggan memilih Paper Core Kami:
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i><span>Waktu Produksi Cepat.</span></li>
-              <li><i class="bi bi-check-circle"></i><span>Berbagai pilihan diameter dan panjang untuk berbagai jenis gulungan.</span></li>
-              <li><i class="bi bi-check-circle"></i><span>Terbuat dari 100% bahan daur ulang.</span></li>
-              <li><i class="bi bi-check-circle"></i><span>Paper Core dalam stok siap untuk pengiriman dihari yang sama.</span></li>
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+              <h3>Kustom Paper Core untuk kebutuhan Anda</h3>
+              <p>
+                <span class="fw-bold" style="color: #aa7d51"
+                  >Bima Inti Kertas </span
+                >memproduksi Paper Core dari kertas karton daur ulang, yang
+                dirancang khusus untuk mendukung berbagai produk yang digulung,
+                memastikannya tetap tergulung dengan kencang dan dapat
+                dikeluarkan dengan lancar. Berikut ini beberapa alasan mengapa
+                pelanggan memilih Paper Core Kami:
+              </p>
+              <ul>
+                <li>
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                  <span>Waktu Produksi Cepat.</span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                  <span>Berbagai pilihan diameter dan panjang untuk berbagai jenis gulungan.</span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                  <span>Terbuat dari 100% bahan daur ulang.</span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                  <span>Paper Core dalam stok siap untuk pengiriman dihari yang sama.</span>
+                </li>
+              </ul>
+              <a href="/mesin-produk-details.html" class="read-more">
+                <span>Baca Selengkapnya</span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Produk Kami</h2>
+          <p>
+            <span class="fw-bold" style="color: #aa7d51">Bima Inti Kertas</span>
+            juga mempunyai contoh produk yang diproduksi, seperti contoh yang
+            ada dibawah:
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">Semua Produk</li>
             </ul>
-            <a href="/mesin-produk-details.html" class="read-more">
-              <span>Baca Selengkapnya</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
+            <!-- End Portfolio Filters -->
 
+            <!-- 1 -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/bik-images/paper-core.jpg" alt="paper-core" class="img-fluid"  />
+                <div class="portfolio-info">
+                  <h4>Paper Core</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/bik-images/paper-core.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/bik-images/paper-spool-bobbin.jpg" alt="paper-bobbin" class="img-fluid" />
+                <div class="portfolio-info">
+                  <h4>Papan Spools/Bobbins</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/bik-images/paper-spool-bobbin.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/core berbagai ukuran3.jpg" alt="ukuran-core" class="img-fluid" />
+                <div class="portfolio-info">
+                  <h4>Paper Tube</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/core berbagai ukuran3.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/bik-images/siku-karton.jpg" alt="siku-karton" class="img-fluid" />
+                <div class="portfolio-info">
+                  <h4>Siku Kertas</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/bik-images/siku-karton.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+            <!-- 2 -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/bik-images/paper-canister.webp" alt="paper-canister" class="img-fluid" />
+                <div class="portfolio-info">
+                  <h4>Paper Canister</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/bik-images/paper-canister.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/bik-images/paper-tube-3.webp" alt="" class="img-fluid" />
+                <div class="portfolio-info">
+                  <h4>Paper Tube</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/bik-images/paper-tube-3.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/bik-images/toilet-paper-tube.webp" alt="paper-tube" class="img-fluid" />
+                <div class="portfolio-info">
+                  <h4>Paper Tube</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/bik-images/toilet-paper-tube.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
+                <img src="assets/img/bik-images/paper-drum.jpg" alt="paper-drum" class="img-fluid" />
+                <div class="portfolio-info">
+                  <h4>Paper Drum</h4>
+                  <p>Paper</p>
+                  <a href="assets/img/bik-images/paper-drum.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+          </div>
         </div>
 
-      </div>
-
-    </section>
-   
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Produk Kami</h2>
-        <p>
-          <span class="fw-bold" style="color: #aa7d51;">Bima Inti Kertas</span> juga mempunyai contoh produk yang diproduksi, seperti contoh yang ada dibawah:
-        </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Semua Produk</li>
-          </ul><!-- End Portfolio Filters -->
-
-<!-- 1 -->
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/paper-core.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Paper Core</h4>
-                <p>Paper</p>
-                <a href="assets/img/bik-images/paper-core.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/paper-spool-bobbin.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Papan Spools/Bobbins</h4>
-                <p>Paper</p>
-                <a href="assets/img/bik-images/paper-spool-bobbin.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/core berbagai ukuran3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Paper Tube</h4>
-                <p>Paper</p>
-                <a href="assets/img/core berbagai ukuran3.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/siku-karton.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Siku Kertas</h4>
-                <p>Paper</p>
-                <a href="assets/img/bik-images/siku-karton.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-          </div>
-          <!-- End Portfolio Container -->
-<!-- 2 -->
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/paper-canister.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Paper Canister</h4>
-                <p>Paper</p>
-                <a href="assets/img/bik-images/paper-canister.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/paper-tube-3.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Paper Tube</h4>
-                <p>Paper</p>
-                <a href="assets/img/bik-images/paper-tube-3.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/toilet-paper-tube.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Paper Tube</h4>
-                <p>Paper</p>
-                <a href="assets/img/bik-images/toilet-paper-tube.webp" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-paper">
-              <img src="assets/img/bik-images/paper-drum.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Paper Drum</h4>
-                <p>Paper</p>
-                <a href="assets/img/bik-images/paper-drum.jpg" title="Paper" data-gallery="portfolio-gallery-paper" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-          </div>
-
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Industri yang kami layani</h2>
         </div>
+        <!-- End Section Title -->
 
-      </div>
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Industri yang kami layani</h2>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-          
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/label-industri.webp" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Label Industri</span>
+        <div class="container">
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/label-industri.webp" alt="label-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Label Industri</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/textile-industri.webp" alt="textile-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Textil Industri</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/packaging-industri.webp" alt="packaging-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Packaging Industri</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/film-foil-industri.jpg" alt="film-foil-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Film and Foil Industri</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/textile-industri.webp" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Textil Industri</span>
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/printing-industri.jpg" alt="printing-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Printing Industri</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/adhesive-industri.jpg" alt="adhesive-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Adhesive Tape Industri</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/karpet-industri.jpg" alt="karpet-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Karpet Industri</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card-serve">
+                <img src="assets/img/iron-steel-industri.jpg" alt="iron-steel-industri" class="img-fluid" />
+                <div class="overlay">
+                  <span class="text-center">Iron & Steel Industri</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/packaging-industri.webp" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Packaging Industri</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/film-foil-industri.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Film and Foil Industri</span>
-              </div>
-            </div>
-          </div>
-
         </div>
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-          
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/printing-industri.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Printing Industri</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/adhesive-industri.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Adhesive Tape Industri</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/karpet-industri.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Karpet Industri</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card-serve">
-              <img src="assets/img/iron-steel-industri.jpg" class="img-fluid" alt="">
-              <div class="overlay">
-                <span class="text-center">Iron & Steel Industri</span>
-              </div>
-            </div>
-          </div>
+      </section>
+      <!-- /Portfolio Section -->
 
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Jasa Layanan</h2>
+          <p>
+            Perusahaan Kami memperkerjakan team yang handal dan berpengalaman
+            dibidangnya dan ramah tamah dalam melayani calon pelanggan sehingga
+            hal yang utama bagi kami untuk menciptakan kepuasan bagi pelanggan.
+          </p>
         </div>
+        <!-- End Section Title -->
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Jasa Layanan</h2>
-        <p>
-          Perusahaan Kami memperkerjakan team yang handal dan berpengalaman dibidangnya 
-          dan ramah tamah dalam melayani calon pelanggan sehingga hal yang utama bagi kami 
-          untuk menciptakan kepuasan bagi pelanggan.
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-brown position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-shield-fill-check"></i>
-              </div>
-              <h3>Kualitas Bahan</h3>
-              <!-- <a href="#" class="stretched-link">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-brown position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="none"
+                      stroke-width="0"
+                      fill="#f5f5f5"
+                      d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                    </path>
+                  </svg>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                </div>
+                <h3>Kualitas Bahan</h3>
+                <!-- <a href="#" class="stretched-link">
               </a> -->
-              <p>Material yang kami sediakan merupakan material baru dan berkualitas.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-brown position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-ui-checks-grid"></i>
+                <p>
+                  Material yang kami sediakan merupakan material baru dan
+                  berkualitas.
+                </p>
               </div>
-              <h3>Keahlian Manufaktur Lengkap</h3>
-              <p>
-                Nikmati produk Paper Core berkualitas tinggi yang tersedia dalam berbagai bentuk, 
-                termasuk Industri Core, Paper Tube, dan solusi khusus, yang memenuhi semua kebutuhan Anda.
-              </p>
             </div>
-          </div><!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-brown position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-currency-dollar"></i>
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item item-brown position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="none"
+                      stroke-width="0"
+                      fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                  </path>
+                  </svg>
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </div>
+                <h3>Keahlian Manufaktur Lengkap</h3>
+                <p>
+                  Nikmati produk Paper Core berkualitas tinggi yang tersedia
+                  dalam berbagai bentuk, termasuk Industri Core, Paper Tube, dan
+                  solusi khusus, yang memenuhi semua kebutuhan Anda.
+                </p>
               </div>
-              <h3>Solusi Manufaktur Hemat Biaya</h3>
-              <p>
-                Dapatkan solusi manufaktur yang disesuaikan dan hemat biaya untuk berbagai macam produk Paper Core. 
-                MOQ rendah Kami menjamin keunggulan yang terjangkau.
-              </p>
             </div>
-          </div><!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-brown position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-joystick"></i>
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item item-brown position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="none"
+                      stroke-width="0"
+                      fill="#f5f5f5"
+                      d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                    </path>
+                  </svg>
+                  <i class="fa fa-usd" aria-hidden="true"></i>
+                </div>
+                <h3>Solusi Manufaktur Hemat Biaya</h3>
+                <p>
+                  Dapatkan solusi manufaktur yang disesuaikan dan hemat biaya
+                  untuk berbagai macam produk Paper Core. MOQ rendah Kami
+                  menjamin keunggulan yang terjangkau.
+                </p>
               </div>
-              <h3>Mesin Teknologi</h3>
-              <p>
-                Kami menyediakan mesin berteknologi modern sehingga kami dapat memberikan kualitas terbaik bagi pelanggan
-              </p>
-              <a href="#" class="stretched-link"></a>
             </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item item-brown position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="none"
+                      stroke-width="0"
+                      fill="#f5f5f5"
+                      d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                    </path>
+                  </svg>
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <h3>Mesin Teknologi</h3>
+                <p>
+                  Kami menyediakan mesin berteknologi modern sehingga kami dapat
+                  memberikan kualitas terbaik bagi pelanggan
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
           </div>
-          <!-- End Service Item -->
-
         </div>
+      </section>
+      <!-- /Services Section -->
 
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Faq 2 Section -->
-    <section id="faq-2" class="faq-2 section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Q&A Tentang Bima Inti Kertas</h2>
-        <p>Punya pertanyaan lain? Kami akan dengan senang hati menjawab semua pertanyaan Anda.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 col-md-6">
-            <div class="faq-container">
-              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Apa Kegunaan Paper Core dan Tube Industri?</h3>
-                <div class="faq-content">
-                  <p>Paper Core dan Tube Industri adalah produk khusus yang digunakan dalam berbagai aplikasi, seperti pengemasan, penggulungan, konstruksi, dan pengiriman.</p>
-                </div>
-                <i class="faq-toggle bi bi-caret-right-fill"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Apakah ada berbagai jenis Paper Core dan Tube?</h3>
-                <div class="faq-content">
-                  <p>Ya, ada berbagai jenis Paper Core dan Tube yang tersedia, memungkinkan penyesuaian untuk aplikasi tertentu.</p>
-                </div>
-                <i class="faq-toggle bi bi-caret-right-fill"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Industri apa yang mendapat manfaat dari penggunaan Paper Core dan Tube?</h3>
-                <div class="faq-content">
-                  <p>Berbagai industri, termasuk tekstil, pengemasan, lembaran logam, pembuatan pita dan label, konstruksi, pengiriman dan logistik, mendapat manfaat dari produk ini.</p>
-                </div>
-                <i class="faq-toggle bi bi-caret-right-fill"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-          </div>
-          <!-- end section faq pertama -->
-
-          <div class="col-lg-6 col-md-6">
-            <div class="faq-container">
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Apakah ada jumlah pesanan minimum dan maksimum?</h3>
-                <div class="faq-content">
-                  <p>Jumlah pesanan minimum dan maksimum dapat bervariasi, Bima Inti Kertas menawarkan fleksibelitas.</p>
-                </div>
-                <i class="faq-toggle bi bi-caret-right-fill"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Apakah Bima Inti Kertas menawarkan garansi atau jaminan?</h3>
-                <div class="faq-content">
-                  <p>Ya, Bima Inti Kertas menawarkan garansi atau jaminan untuk memastikan kepuasan Anda terhadap produk Kami.</p>
-                </div>
-                <i class="faq-toggle bi bi-caret-right-fill"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Bagaimana Bima Inti Kertas memastikan kualitas Paper Core dan Tube nya?</h3>
-                <div class="faq-content">
-                  <p>Bima Inti Kertas memastikan kualitas melalui pemilihan material kertas, Teknik manufaktur yang canggih, dan langkah-langkah pengendalian kualitas.</p>
-                </div>
-                <i class="faq-toggle bi bi-caret-right-fill"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-          </div>
-          <!-- end section faq pertama -->
-
+      <!-- Faq 2 Section -->
+      <section id="faq-2" class="faq-2 section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Q&A Tentang Bima Inti Kertas</h2>
+          <p>
+            Punya pertanyaan lain? Kami akan dengan senang hati menjawab semua
+            pertanyaan Anda.
+          </p>
         </div>
+        <!-- End Section Title -->
 
-      </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6 col-md-6">
+              <div class="faq-container">
+                <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                  <i class="faq-icon fa fa-question-circle-o"></i>
+                  <h3>Apa Kegunaan Paper Core dan Tube Industri?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Paper Core dan Tube Industri adalah produk khusus yang
+                      digunakan dalam berbagai aplikasi, seperti pengemasan,
+                      penggulungan, konstruksi, dan pengiriman.
+                    </p>
+                  </div>
+                  <i class="faq-toggle fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+                <!-- End Faq item-->
 
-    </section>
-    <!-- /Faq 2 Section -->
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="faq-icon fa fa-question-circle-o" aria-hidden="true"></i>
+                  <h3>Apakah ada berbagai jenis Paper Core dan Tube?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Ya, ada berbagai jenis Paper Core dan Tube yang tersedia,
+                      memungkinkan penyesuaian untuk aplikasi tertentu.
+                    </p>
+                  </div>
+                  <i class="faq-toggle fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+                <!-- End Faq item-->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <!-- <p></p> -->
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <h6 class="fw-bold">Head Office:</h6>
-                <p><span class="fw-bold">Satrio Tower,</span> 9th Floor A, 
-                  Jl. Prof. Dr. Satrio Blok C4 Kuningan Setiabudi - Jakarta Selatan 12950
-                </p>
-                <h6 class="fw-bold">Factory:</h6>
-				        <p>
-                  <span class="fw-bold">Industrial Area,</span> 
-                  Jl. Raya Narogong Km.26 No. 767 RT.003/RT.002, 
-                  Kel. Dayeuh, Kec. Cileungsi, Kab. Bogor - Jawa Barat 16820
-                </p>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="faq-icon fa fa-question-circle-o" aria-hidden="true"></i>
+                  <h3>
+                    Industri apa yang mendapat manfaat dari penggunaan Paper
+                    Core dan Tube?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Berbagai industri, termasuk tekstil, pengemasan, lembaran
+                      logam, pembuatan pita dan label, konstruksi, pengiriman
+                      dan logistik, mendapat manfaat dari produk ini.
+                    </p>
+                  </div>
+                  <i class="faq-toggle fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+                <!-- End Faq item-->
               </div>
             </div>
-            <!-- End Info Item -->
+            <!-- end section faq pertama -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>(021) 2598 4818</p>
+            <div class="col-lg-6 col-md-6">
+              <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="faq-icon fa fa-question-circle-o" aria-hidden="true"></i>
+                  <h3>Apakah ada jumlah pesanan minimum dan maksimum?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Jumlah pesanan minimum dan maksimum dapat bervariasi, Bima
+                      Inti Kertas menawarkan fleksibelitas.
+                    </p>
+                  </div>
+                  <i class="faq-toggle fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="faq-icon fa fa-question-circle-o" aria-hidden="true"></i>
+                  <h3>
+                    Apakah Bima Inti Kertas menawarkan garansi atau jaminan?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Ya, Bima Inti Kertas menawarkan garansi atau jaminan untuk
+                      memastikan kepuasan Anda terhadap produk Kami.
+                    </p>
+                  </div>
+                  <i class="faq-toggle fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="faq-icon fa fa-question-circle-o" aria-hidden="true"></i>
+                  <h3>
+                    Bagaimana Bima Inti Kertas memastikan kualitas Paper Core
+                    dan Tube nya?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Bima Inti Kertas memastikan kualitas melalui pemilihan
+                      material kertas, Teknik manufaktur yang canggih, dan
+                      langkah-langkah pengendalian kualitas.
+                    </p>
+                  </div>
+                  <i class="faq-toggle fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+                <!-- End Faq item-->
               </div>
             </div>
-            <!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>- info@bimapaper.co.id
-                  <br>
-                  - sales@bimapaper.co.id
-                </p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
+            <!-- end section faq pertama -->
           </div>
+        </div>
+      </section>
+      <!-- /Faq 2 Section -->
 
-          <!-- <div class="col-lg-8">
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <!-- <p></p> -->
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa fa-map-marker flex-shrink-0" aria-hidden="true"></i>
+                <div>
+                  <h3>Address</h3>
+                  <h6 class="fw-bold">Head Office:</h6>
+                  <p>
+                    <span class="fw-bold">Satrio Tower,</span> 9th Floor A, Jl.
+                    Prof. Dr. Satrio Blok C4 Kuningan Setiabudi - Jakarta
+                    Selatan 12950
+                  </p>
+                  <h6 class="fw-bold">Factory:</h6>
+                  <p>
+                    <span class="fw-bold">Industrial Area,</span>
+                    Jl. Raya Narogong Km.26 No. 767 RT.003/RT.002, Kel. Dayeuh,
+                    Kec. Cileungsi, Kab. Bogor - Jawa Barat 16820
+                  </p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa fa-phone flex-shrink-0" aria-hidden="true"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>(021) 2598 4818</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="fa fa-envelope flex-shrink-0" aria-hidden="true"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>
+                    - info@bimapaper.co.id
+                    <br />
+                    - sales@bimapaper.co.id
+                  </p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+            </div>
+
+            <!-- <div class="col-lg-8">
             <form action="contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
@@ -641,111 +768,109 @@
               </div>
             </form>
           </div> -->
-          <div class="col-lg-8">
-            <form action="https://formspree.io/f/xovavbbr" method="POST" class="php-email-form">
-              <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Nama" required="">
+          <!-- Email menggunakan Formsspree.io -->
+            <div class="col-lg-8">
+              <form action="https://formspree.io/f/xovavbbr" method="POST" class="php-email-form">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Nama" required="" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required="" />
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" name="subject" class="form-control" placeholder="Subjek" required="" />
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Pesan Anda" required=""></textarea>
+                  </div>
+
+                  <!-- Widget reCAPTCHA -->
+                  <div class="g-recaptcha"data-sitekey="6LfnsxgqAAAAACQIg3VZcbnb4OSI0EUSAD2pu1PA"></div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
                 </div>
-                
-                <div class="col-md-6">
-                  <input type="email" name="email" class="form-control" placeholder="Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" name="subject" class="form-control" placeholder="Subjek" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Pesan Anda" required=""></textarea>
-                </div>
-
-                <!-- Widget reCAPTCHA -->
-                <div class="g-recaptcha" data-sitekey="6LfnsxgqAAAAACQIg3VZcbnb4OSI0EUSAD2pu1PA"></div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-
-            </form>
+              </form>
+            </div>
+            <!-- End Contact Form -->
           </div>
-          <!-- End Contact Form -->
-
         </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
 
-      </div>
-
-    </section>
-    <!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <img src="assets/img/bik-images/Logo BIK - Final - Png.png" alt="">
-      <!-- <h3 class="sitename">
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <img src="assets/img/bik-images/Logo BIK - Final - Png.png" alt="" />
+        <!-- <h3 class="sitename">
         Bima Inti Kertas
       </h3> -->
-      <!-- <p></p> -->
-      <!-- <div class="social-links d-flex justify-content-center">
+        <!-- <p></p> -->
+        <!-- <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-instagram"></i></a>
         <a href=""><i class="bi bi-linkedin"></i></a>
       </div> -->
-      <div class="container">
-        <div class="copyright">
-          <span>2024 &copy;</span> <strong class="px-1 sitename">Bima Paper</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bimamedia.co.id/">Bima Media</a>
+        <div class="container">
+          <div class="copyright">
+            <span>2024 &copy;</span>
+            <strong class="px-1 sitename">Bima Paper</strong>
+            <span>All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bimamedia.co.id/">Bima Media</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- SweetAlert -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <!-- reCaptcha v2 -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- reCaptcha v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-  <!-- reCaptcha v3 -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- reCaptcha v3 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js?render={6LcXjhoqAAAAAE9cfz8HnJVKxn42-ryyWhKs6mPz}"></script> -->
-
-
-</body>
-
+  </body>
 </html>
